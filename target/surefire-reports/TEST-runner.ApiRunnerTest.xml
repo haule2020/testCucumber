@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="116" failures="2" name="runner.ApiRunnerTest" time="0.291" errors="16" skipped="60">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Automation\WP_PULL_GIT\cxtPolicy"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Automation\WP_PULL_GIT\cxtPolicy"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Tom\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Automation\Hau.Automation\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7701121462802688143.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\JMeter\bin;C:\Program Files\Java\jdk1.8.0_221\bin;C:\AUtomation\android-sdk\platform-tools;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files (x86)\nodejs\;C:\Program Files\apache-ant-1.10.9\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Automation\curl-7.72.0_3-win64-mingw\curl-7.72.0-win64-mingw\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Tom\AppData\Local\Microsoft\WindowsApps;C:\Users\Tom\AppData\Roaming\npm;C:\Users\Tom\AppData\Local\GitHubDesktop\bin;C:\Program Files\apache-maven-3.8.1\bin;;C:\AUtomation\eclipse-dsl-neon-3-win32-x86_64\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Tom"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Tom"/>
+    <property name="java.class.path" value="/C:/Automation/eclipse-dsl-neon-3-win32-x86_64/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Automation\WP_PULL_GIT\cxtPolicy\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="| 2816548240% | 204 |" name="Given I already authorozied" time="0.003"/>
+  <testcase classname="| 2816548240% | 204 |" name="When I call API to search by inputing invalid policy number &quot;2816548240%&quot;" time="0"/>
+  <testcase classname="| 2816548240% | 204 |" name="Then system response no content with status code &quot;204&quot;" time="0"/>
+  <testcase classname="| 2816548240% | 204 |" name="| 2816548240% | 204 |" time="0.001"/>
+  <testcase classname="| %2816548240% | 204 |" name="Given I already authorozied" time="0"/>
+  <testcase classname="| %2816548240% | 204 |" name="When I call API to search by inputing invalid policy number &quot;%2816548240%&quot;" time="0"/>
+  <testcase classname="| %2816548240% | 204 |" name="Then system response no content with status code &quot;204&quot;" time="0"/>
+  <testcase classname="| %2816548240% | 204 |" name="| %2816548240% | 204 |" time="0.001"/>
+  <testcase classname="|  | 204 |" name="Given I already authorozied" time="0"/>
+  <testcase classname="|  | 204 |" name="When I call API to search by inputing invalid policy number &quot;&quot;" time="0"/>
+  <testcase classname="|  | 204 |" name="Then system response no content with status code &quot;204&quot;" time="0"/>
+  <testcase classname="|  | 204 |" name="|  | 204 |" time="0.002"/>
+  <testcase classname="| 2816548240 | 200 |" name="Given I already get authorization" time="0"/>
+  <testcase classname="| 2816548240 | 200 |" name="When I call API to search by inputing valid policy number &quot;2816548240&quot;" time="0"/>
+  <testcase classname="| 2816548240 | 200 |" name="Then system response with status code &quot;200&quot;" time="0"/>
+  <testcase classname="| 2816548240 | 200 |" name="| 2816548240 | 200 |" time="0"/>
+  <testcase classname="| 2871284582 | 200 |" name="Given I already get authorization" time="0"/>
+  <testcase classname="| 2871284582 | 200 |" name="When I call API to search by inputing valid policy number &quot;2871284582&quot;" time="0"/>
+  <testcase classname="| 2871284582 | 200 |" name="Then system response with status code &quot;200&quot;" time="0"/>
+  <testcase classname="| 2871284582 | 200 |" name="| 2871284582 | 200 |" time="0"/>
+  <testcase classname="| 2816548240 |" name="Given I search policy successfully &quot;2816548240&quot;" time="0"/>
+  <testcase classname="| 2816548240 |" name="Then I can get correct response field name" time="0.005">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at stepDefinitions.VerifyResponseFields.iCanGetCorrectResponseFieldName(VerifyResponseFields.java:38)
+	at ✽.Then I can get correct response field name(src/test/resources/Feature/policyEnquery.feature:29)
+</failure>
+    <system-err>com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Tri?u H?i Question for customer:Nguy?n Ng?c L�n &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;C?c Tr??ng C?c CS ?KQL C? Tr� V� DLQG V? D�n C?&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:135)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:127)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:196)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:216)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:115)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyResponseFields.iCanGetCorrectResponseFieldName(VerifyResponseFields.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</system-err>
+  </testcase>
+  <testcase classname="| 2816548240 |" name="| 2816548240 |" time="0.006">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at stepDefinitions.VerifyResponseFields.iCanGetCorrectResponseFieldName(VerifyResponseFields.java:38)
+	at ✽.Then I can get correct response field name(src/test/resources/Feature/policyEnquery.feature:29)
+</failure>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="Given I can search a policy &quot;2816548240&quot;" time="0"/>
+  <testcase classname="| 2816548240 | SS029 |" name="Then I get correct policyNumber &quot;2816548240&quot;" time="0.002">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICYItems.iGetCorrectPolicyNumber(VerifyPOLICYItems.java:29)
+	at ✽.Then I get correct policyNumber &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:36)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="| 2816548240 | SS029 |" time="0.003">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICYItems.iGetCorrectPolicyNumber(VerifyPOLICYItems.java:29)
+	at ✽.Then I get correct policyNumber &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:36)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct excludeInfo" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct bancaInd" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct agentCode &quot;SS029&quot;" time="0.008">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct agentMobile" time="0.008">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct agentName" time="0.009">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct locationCode" time="0.01">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct gracePeriod" time="0.011">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | SS029 |" name="And I get correct ostPrem" time="0.012">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="Given I can search a policy &quot;2871284582&quot;" time="0"/>
+  <testcase classname="| 2871284582 | FT487 |" name="Then I get correct policyNumber &quot;2871284582&quot;" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICYItems.iGetCorrectPolicyNumber(VerifyPOLICYItems.java:29)
+	at ✽.Then I get correct policyNumber &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:36)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="| 2871284582 | FT487 |" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICYItems.iGetCorrectPolicyNumber(VerifyPOLICYItems.java:29)
+	at ✽.Then I get correct policyNumber &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:36)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct excludeInfo" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct bancaInd" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct agentCode &quot;FT487&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct agentMobile" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct agentName" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct locationCode" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct gracePeriod" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | FT487 |" name="And I get correct ostPrem" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="Given I search a policy &quot;2816548240&quot;" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_OWNER.iSearchAPolicy(VerifyPOLICY_OWNER.java:23)
+	at ✽.Given I search a policy &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:52)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="| 2816548240 | 2802978231 |" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_OWNER.iSearchAPolicy(VerifyPOLICY_OWNER.java:23)
+	at ✽.Given I search a policy &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:52)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct clientNumber &quot;2802978231&quot;" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct clientName" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct idNumber" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct idIssueDate" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct idIssuePlace" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct sexCode" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct birthdate" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2802978231 |" name="And I get correct vipInd" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="Given I search a policy &quot;2871284582&quot;" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_OWNER.iSearchAPolicy(VerifyPOLICY_OWNER.java:23)
+	at ✽.Given I search a policy &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:52)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="| 2871284582 | 2805363580 |" time="0.002">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_OWNER.iSearchAPolicy(VerifyPOLICY_OWNER.java:23)
+	at ✽.Given I search a policy &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:52)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct clientNumber &quot;2805363580&quot;" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct clientName" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct idNumber" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct idIssueDate" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct idIssuePlace" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct sexCode" time="0.006">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct birthdate" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get correct vipInd" time="0.007">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="Given I can search policy&apos;s COVERAGES &quot;2816548240&quot;" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyCOVERAGES.iCanSearchPolicySCOVERAGES(VerifyCOVERAGES.java:27)
+	at ✽.Given I can search policy&apos;s COVERAGES &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:68)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="| 2816548240 | 20171231 | I | I |" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyCOVERAGES.iCanSearchPolicySCOVERAGES(VerifyCOVERAGES.java:27)
+	at ✽.Given I can search policy&apos;s COVERAGES &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:68)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="Then I get coverageEffectiveDate &quot;20171231&quot;" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get coverageIssueDate" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get coverageXpryDate" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get coverageCode" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get mcStatusCode &quot;I&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get mcEffectiveDate" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get coverageClass" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get coverageStatusCode &quot;I&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 20171231 | I | I |" name="And I get coveragePrem;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="Given I can search policy&apos;s COVERAGES &quot;2871284582&quot;" time="0">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyCOVERAGES.iCanSearchPolicySCOVERAGES(VerifyCOVERAGES.java:27)
+	at ✽.Given I can search policy&apos;s COVERAGES &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:68)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="| 2871284582 | 20210327 | N |  |" time="0">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyCOVERAGES.iCanSearchPolicySCOVERAGES(VerifyCOVERAGES.java:27)
+	at ✽.Given I can search policy&apos;s COVERAGES &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:68)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="Then I get coverageEffectiveDate &quot;20210327&quot;" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get coverageIssueDate" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get coverageXpryDate" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get coverageCode" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get mcStatusCode &quot;&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get mcEffectiveDate" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get coverageClass" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get coverageStatusCode &quot;N&quot;" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 20210327 | N |  |" name="And I get coveragePrem;" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2801422092 |" name="Given I can get response of policyNumber &quot;2816548240&quot;" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_INS.iCanGetResponseOfPolicyNumber(VerifyPOLICY_INS.java:25)
+	at ✽.Given I can get response of policyNumber &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:86)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | 2801422092 |" name="| 2816548240 | 2801422092 |" time="0.002">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2816548240&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:Chu Triệu Hải Question for customer:Nguyễn Ngọc Lân &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;SS029&quot;,&quot;agentMobile&quot;:&quot;SS0292&quot;,&quot;agentName&quot;:&quot;Agent SS029&quot;,&quot;locationCode&quot;:&quot;SSO01&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:70570.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2802978231&quot;,&quot;clientName&quot;:&quot;Client 2802978231&quot;,&quot;idNumber&quot;:&quot;280297823&quot;,&quot;idIssueDate&quot;:&quot;20150430&quot;,&quot;idIssuePlace&quot;:&quot;Cục Trưởng Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;F&quot;,&quot;birthdate&quot;:&quot;19690517&quot;,&quot;[truncated 757 chars]; line: 1, column: 831] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_INS.iCanGetResponseOfPolicyNumber(VerifyPOLICY_INS.java:25)
+	at ✽.Given I can get response of policyNumber &quot;2816548240&quot;(src/test/resources/Feature/policyEnquery.feature:86)
+</error>
+  </testcase>
+  <testcase classname="| 2816548240 | 2801422092 |" name="Then I get clientNumber &quot;2801422092&quot;" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2801422092 |" name="And I get clientName" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2801422092 |" name="And I get birthdate" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2801422092 |" name="And I get sexCode" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | 2801422092 |" name="And I get idNumber" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="Given I can get response of policyNumber &quot;2871284582&quot;" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_INS.iCanGetResponseOfPolicyNumber(VerifyPOLICY_INS.java:25)
+	at ✽.Given I can get response of policyNumber &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:86)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="| 2871284582 | 2805363580 |" time="0.001">
+    <error message="Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;mcIndicator&quot; (class bodyResponseFields.PolicyInsured), not marked as ignorable (6 known properties: &quot;sexCode&quot;, &quot;clientNumber&quot;, &quot;clientName&quot;, &quot;coverages&quot;, &quot;birthdate&quot;, &quot;idNumber&quot;])
+ at [Source: (String)&quot;{&quot;policy&quot;:{&quot;policyNumber&quot;:&quot;2871284582&quot;,&quot;excludeInfo&quot;:&quot;Question for customer:No data found &quot;,&quot;bancaInd&quot;:&quot;N&quot;,&quot;agentCode&quot;:&quot;FT487&quot;,&quot;agentMobile&quot;:&quot;FT4872&quot;,&quot;agentName&quot;:&quot;Agent FT487&quot;,&quot;locationCode&quot;:&quot;HPH09&quot;,&quot;gracePeriod&quot;:&quot;Y&quot;,&quot;ostPrem&quot;:12868.0},&quot;policyOwner&quot;:{&quot;clientNumber&quot;:&quot;2805363580&quot;,&quot;clientName&quot;:&quot;Client 2805363580&quot;,&quot;idNumber&quot;:&quot;280536358&quot;,&quot;idIssueDate&quot;:&quot;20170430&quot;,&quot;idIssuePlace&quot;:&quot;Cục CS ĐKQL Cư Trú Và DLQG Về Dân Cư&quot;,&quot;sexCode&quot;:&quot;M&quot;,&quot;birthdate&quot;:&quot;19810628&quot;,&quot;vipInd&quot;:&quot;N&quot;,&quot;phoneNumber&quot;:&quot;28053635803&quot;,&quot;emailAd&quot;[truncated 726 chars]; line: 1, column: 793] (through reference chain: bodyResponseFields.BodyResponse[&quot;policyInsureds&quot;]-&gt;java.util.ArrayList[0]-&gt;bodyResponseFields.PolicyInsured[&quot;mcIndicator&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:347)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:138)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$2.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$1.callStatic(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at stepDefinitions.VerifyPOLICY_INS.iCanGetResponseOfPolicyNumber(VerifyPOLICY_INS.java:25)
+	at ✽.Given I can get response of policyNumber &quot;2871284582&quot;(src/test/resources/Feature/policyEnquery.feature:86)
+</error>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="Then I get clientNumber &quot;2805363580&quot;" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get clientName" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get birthdate" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get sexCode" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2871284582 | 2805363580 |" name="And I get idNumber" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="| 2816548240 | asCDDgdafshgbb,ki | 401 | invalid_token |" name="Given I search policyNumber &quot;2816548240&quot; with invalid token &quot;asCDDgdafshgbb,ki&quot;" time="0"/>
+  <testcase classname="| 2816548240 | asCDDgdafshgbb,ki | 401 | invalid_token |" name="Then I get statusCode &quot;401&quot;" time="0"/>
+  <testcase classname="| 2816548240 | asCDDgdafshgbb,ki | 401 | invalid_token |" name="And I get error message &quot;invalid_token&quot;" time="0.001"/>
+  <testcase classname="| 2816548240 | asCDDgdafshgbb,ki | 401 | invalid_token |" name="| 2816548240 | asCDDgdafshgbb,ki | 401 | invalid_token |" time="0.001"/>
+  <testcase classname="| 2871284582 | % | 401 | Invalid_token |" name="Given I search policyNumber &quot;2871284582&quot; with invalid token &quot;%&quot;" time="0"/>
+  <testcase classname="| 2871284582 | % | 401 | Invalid_token |" name="Then I get statusCode &quot;401&quot;" time="0"/>
+  <testcase classname="| 2871284582 | % | 401 | Invalid_token |" name="And I get error message &quot;Invalid_token&quot;" time="0"/>
+  <testcase classname="| 2871284582 | % | 401 | Invalid_token |" name="| 2871284582 | % | 401 | Invalid_token |" time="0.001"/>
+  <testcase classname="| 2871284582 |  | 400 | Invalid_request |" name="Given I search policyNumber &quot;2871284582&quot; with invalid token &quot;&quot;" time="0"/>
+  <testcase classname="| 2871284582 |  | 400 | Invalid_request |" name="Then I get statusCode &quot;400&quot;" time="0"/>
+  <testcase classname="| 2871284582 |  | 400 | Invalid_request |" name="And I get error message &quot;Invalid_request&quot;" time="0"/>
+  <testcase classname="| 2871284582 |  | 400 | Invalid_request |" name="| 2871284582 |  | 400 | Invalid_request |" time="0"/>
+  <testcase classname="Scenario: Verify response time" name="Given I call the API &quot;2816548240&quot;" time="0"/>
+  <testcase classname="Scenario: Verify response time" name="Then response time should not exceed &quot;9000&quot; miliseconds" time="0"/>
+  <testcase classname="Scenario: Verify response time" name="Scenario: Verify response time" time="0"/>
+</testsuite>
